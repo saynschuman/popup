@@ -157,3 +157,9 @@ body {
 .text-block p.black {
   color: #000;
 }
+
+@media screen and (max-width: 769px) {
+  .popup-wrapper {
+    width: 85%;
+  }
+}
