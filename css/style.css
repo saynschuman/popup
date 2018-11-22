@@ -1,0 +1,122 @@
+body {
+  background-color: rgba(0, 0, 0, 0.07);
+  font-family: verdana;
+}
+
+.popup-wrapper {
+  display: block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  width: 346px;
+  padding: 20px;
+  top: 100px;
+  background-color: #fff;
+}
+
+.logo img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.subtitle {
+  text-align: left;
+  font-weight: 500;
+  line-height: 3;
+  padding-left: 12px;
+}
+
+.labels {
+  padding: 0;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.labels li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.labels li:first-child {
+  margin-right: 30px;
+}
+
+.labels input {
+  display: none;
+}
+
+.labels input + span {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+.labels input + span:before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  left: -19px;
+  top: 1px;
+  background: #fff;
+  border-radius: 100%;
+  border: 1px solid gray;
+  opacity: 1;
+}
+
+.labels input:checked + span:after {
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  left: -15.7px;
+  top: 4.04px;
+  background: #0093dd;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+.labels input:checked + span:before {
+  border: 1px solid #0093dd;
+}
+
+.labels input:checked + span {
+  color: #000;
+}
+
+.labels input:checked + span:after {
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  left: -15.7px;
+  top: 4.04px;
+  background: #0093dd;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+.text-input-block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.text-input-block input:focus {
+  outline: none;
+}
+
+.text-input-block input {
+  width: calc(100% - 20px);
+  color: gray;
+  padding-left: 10px;
+  height: 32px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.04);
+}

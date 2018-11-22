@@ -7,11 +7,38 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="theme-color" content="#000000" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>btc</title>
   </head>
 
   <body>
-    <div id="root"></div>
+    <div class="popup-wrapper">
+      <div class="logo"><img src="img/logo.svg" alt="" /></div>
+      <div class="subtitle">Select verification method please</div>
+      <div class="radio-block">
+        <ul class="labels">
+          <li>
+            <label for="mobile-method">
+              <input
+                name="ver-method"
+                id="mobile-method"
+                type="radio"
+                checked
+              />
+              <span>Mobile Number</span>
+            </label>
+          </li>
+          <li>
+            <label for="email-method">
+              <input name="ver-method" type="radio" id="email-method" />
+              <span>Email</span>
+            </label>
+          </li>
+        </ul>
+        <div class="text-input-block">
+          <input placeholder="+7 *** ** **" type="text" />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
