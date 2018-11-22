@@ -22,10 +22,9 @@ body {
 }
 
 .subtitle {
-  text-align: left;
+  text-align: center;
   font-weight: 500;
   line-height: 3;
-  padding-left: 12px;
 }
 
 .labels {
@@ -119,4 +118,42 @@ body {
   border-radius: 2px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.04);
+}
+
+.buttons-block button:last-child {
+  margin-right: 10px;
+  float: right;
+}
+
+.buttons-block button:focus {
+  outline: none;
+}
+
+.buttons-block button {
+  margin-left: 10px;
+  width: calc(50% - 20px);
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0093dd;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.text-block {
+  text-align: center;
+  font-size: 12px;
+  display: block;
+  margin: auto;
+  max-width: 300px;
+}
+
+.text-block p {
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.text-block p.black {
+  color: #000;
 }
